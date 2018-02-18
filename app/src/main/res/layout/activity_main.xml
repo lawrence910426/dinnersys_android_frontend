@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dinnersys.frontend.dinnersys_frontend.MainActivity"
+    android:background="#284270">
+
+    <Button
+        android:id="@+id/main_menu"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/logout_icon"
+        android:enabled="true"
+        android:onClick="show_menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:text="點餐"
+        app:layout_constraintBottom_toBottomOf="@+id/main_menu"
+        app:layout_constraintStart_toEndOf="@+id/main_menu"
+        app:layout_constraintTop_toTopOf="@+id/main_menu" />
+
+    <Button
+        android:id="@+id/main_order_self"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/logout_icon"
+        android:enabled="true"
+        android:onClick="show_order"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_menu" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="點了什麼"
+        app:layout_constraintBottom_toBottomOf="@+id/main_order_self"
+        app:layout_constraintStart_toEndOf="@+id/main_order_self"
+        app:layout_constraintTop_toTopOf="@+id/main_order_self" />
+
+    <Button
+        android:id="@+id/main_cpswd"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/logout_icon"
+        android:enabled="true"
+        android:onClick="change_pswd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_order_self" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:text="更改密碼"
+        app:layout_constraintBottom_toBottomOf="@+id/main_cpswd"
+        app:layout_constraintStart_toEndOf="@+id/main_cpswd"
+        app:layout_constraintTop_toTopOf="@+id/main_cpswd" />
+
+    <Button
+        android:id="@+id/main_logout"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/logout_icon"
+        android:enabled="true"
+        android:onClick="log_out"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_cpswd" />
+
+    <Button
+        android:id="@+id/main_order_class"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/logout_icon"
+        android:enabled="true"
+        android:onClick="dinnerman_show_order"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_logout" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="15dp"
+        android:background="@mipmap/logout_icon"
+        android:onClick="special_thanks"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:text="登出"
+        app:layout_constraintBottom_toBottomOf="@+id/main_logout"
+        app:layout_constraintStart_toEndOf="@+id/main_logout"
+        app:layout_constraintTop_toTopOf="@+id/main_logout" />
+
+    <TextView
+        android:id="@+id/main_order_class_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:text="全班點了什麼"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/main_order_class"
+        app:layout_constraintStart_toEndOf="@+id/main_order_class"
+        app:layout_constraintTop_toTopOf="@+id/main_order_class" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp"
+        android:text="開發者致謝"
+        app:layout_constraintBottom_toTopOf="@+id/button7"
+        app:layout_constraintEnd_toEndOf="@+id/button7" />
+
+    <TextView
+        android:id="@+id/main_server_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="40dp"
+        android:text="伺服器無法記錄本用戶"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_user_name" />
+
+    <TextView
+        android:id="@+id/main_user_id"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="20dp"
+        android:text="使用者編號: ?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/main_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:text="使用者名稱: ?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_user_id" />
+
+</android.support.constraint.ConstraintLayout>

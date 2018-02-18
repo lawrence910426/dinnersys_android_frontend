@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">午餐系統</string>
+    <string name="title_activity_login_activity">login_activity</string>
+    <string name="title_activity_tab">TabActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_tab2">TabActivity2</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="title_activity_show_menu">ShowMenu</string>
+
+    <array name="date">
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+    </array>
+    <string name="title_activity_dinnerman_get_orders">dinnerman_get_orders</string>
+
+    <string name="forget_pswd">如果你對於你的帳號密碼有疑慮，\n請撥打 <u>0905908503</u></string>
+
+    <string name="developer_thanks">
+        特此感謝:\n
+        白翔云 ，獨立完成iOS前端\n
+        吳邦寧，Android以及網頁開發\n
+        ES Umin，後端安全性\n
+        洪伊妘，美術以及圖片製作\n
+        譚以文，使用者介面構思\n
+        余逸安，系統後端構思\n
+        鄭安騏，強大的圖片支援\n
+        還有幫忙測試的各位，\n
+        謝謝各位的幫助。
+    </string>
+
+    <string name="speacial_stuff">
+        看起來你有好好看開發者感謝呢，\n
+        快去找一年十七班的吳邦寧，\n
+        如果他心情好，\n
+        也許會給你好料的喔wwww
+    </string>
+</resources>
